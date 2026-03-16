@@ -1,4 +1,4 @@
-import { Form, Head } from '@inertiajs/react';
+import { Form, Head, Link } from '@inertiajs/react';
 import InputError from '@/components/input-error';
 import PasswordInput from '@/components/password-input';
 import TextLink from '@/components/text-link';
@@ -24,10 +24,7 @@ export default function Login({
     canRegister,
 }: Props) {
     return (
-        <AuthLayout
-            title=""
-            description=""
-        >
+        <AuthLayout title="" description="">
             <Head title="Log in" />
 
             <Form
@@ -96,11 +93,20 @@ export default function Login({
                                 {processing && <Spinner />}
                                 Log in
                             </Button>
+
+                            <Button
+                                asChild
+                                className="mt-2 w-full bg-indigo-600 text-white hover:bg-indigo-700"
+                            >
+                                <Link href="/auth/microsoft">
+                                    Sign in with Microsoft
+                                </Link>
+                            </Button>
                         </div>
 
                         {canRegister && (
                             <div className="text-center text-sm text-muted-foreground">
-                                Don't have an account?{' '}
+                                Don’t have an account?{' '}
                                 <TextLink href={register()} tabIndex={5}>
                                     Sign up
                                 </TextLink>
