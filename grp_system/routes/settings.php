@@ -23,6 +23,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::inertia('settings/appearance', 'settings/appearance')->name('appearance.edit');
 
+    Route::inertia('settings/sessions', 'settings/sessions')->name('sessions.edit');
+
     Route::get('settings/two-factor', [TwoFactorAuthenticationController::class, 'show'])
         ->name('two-factor.show');
 });

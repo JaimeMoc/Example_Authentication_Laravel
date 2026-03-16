@@ -11,6 +11,7 @@ import { show } from '@/routes/two-factor';
 import { edit as editPassword } from '@/routes/user-password';
 import type { NavItem } from '@/types';
 
+
 const sidebarNavItems: NavItem[] = [
     {
         title: 'Profile',
@@ -31,6 +32,11 @@ const sidebarNavItems: NavItem[] = [
         title: 'Appearance',
         href: editAppearance(),
         icon: null,
+    },
+    {
+        title: 'Sessions',
+        href: '/settings/sessions',
+        icon:null,
     },
 ];
 
