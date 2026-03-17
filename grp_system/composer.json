@@ -17,6 +17,8 @@
         "laravel/socialite": "^5.25",
         "laravel/tinker": "^2.10.1",
         "laravel/wayfinder": "^0.1.9",
+        "socialiteproviders/manager": "^4.8",
+        "socialiteproviders/microsoft": "^4.8",
         "spatie/laravel-permission": "^7.2"
     },
     "require-dev": {

@@ -20,25 +20,25 @@ Route::middleware(['auth'])->group(function () {
         ->name('logout-other-devices');
 });
 
-Route::get('/auth/microsoft', function () {
+Route::get('/auth/microsoft2', function () {
     return Socialite::driver('microsoft')->redirect();
-})->name('microsoft.login');
+})->name('microsoft2.login');
 
-Route::get('/auth/microsoft/callback', function () {
-    $microsoftUser = Socialite::driver('microsoft')->user();
+Route::get('/auth/microsoft2/callback', function () {
+    $microsoftUser = Socialite::driver('microsoft')->stateless()->user();
 
-    // Buscar o crear usuario
     $user = User::updateOrCreate(
         ['email' => $microsoftUser->getEmail()],
         [
             'name' => $microsoftUser->getName(),
             'microsoft_id' => $microsoftUser->getId(),
+            'password' => bcrypt(str()->random(16)),
         ]
     );
 
     Auth::login($user);
 
     return redirect()->route('dashboard');
-})->name('microsoft.callback');
+})->name('microsoft2.callback');
 
 require __DIR__.'/settings.php';

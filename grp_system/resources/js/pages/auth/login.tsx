@@ -1,4 +1,4 @@
-import { Form, Head, Link } from '@inertiajs/react';
+import { Form, Head } from '@inertiajs/react';
 import InputError from '@/components/input-error';
 import PasswordInput from '@/components/password-input';
 import TextLink from '@/components/text-link';
@@ -94,13 +94,13 @@ export default function Login({
                                 Log in
                             </Button>
 
-                            <Button
-                                asChild
-                                className="mt-2 w-full bg-indigo-600 text-white hover:bg-indigo-700"
-                            >
-                                <Link href="/auth/microsoft">
+                            <Button className="mt-2 w-full bg-indigo-600 text-white hover:bg-indigo-700">
+                                <a
+                                    href="/auth/microsoft2"
+                                    className="block w-full text-center"
+                                >
                                     Sign in with Microsoft
-                                </Link>
+                                </a>
                             </Button>
                         </div>
 
