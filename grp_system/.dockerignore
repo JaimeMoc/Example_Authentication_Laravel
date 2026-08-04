@@ -9,6 +9,7 @@ public/hot/
 # Variables de entorno
 .env
 .env.*
+!.env.example
 !.env.docker
 
 # Archivos de desarrollo
@@ -36,5 +37,4 @@ phpunit.xml
 # Herramientas de desarrollo
 Dockerfile
 docker-compose*.yml
-docker/
 *.md
