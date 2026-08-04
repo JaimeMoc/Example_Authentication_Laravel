@@ -147,6 +147,17 @@ grp_system/
 
 ---
 
+## 🐳 Docker Image
+
+La imagen oficial está disponible en **Docker Hub**:  
+`mocjaim27/grp_system-app:latest`
+
+### Ejecución rápida
+```bash
+docker pull mocjaim27/grp_system-app:latest
+docker run -d -p 8000:8000 mocjaim27/grp_system-app:latest
+```
+
 ## License
 
 MIT
