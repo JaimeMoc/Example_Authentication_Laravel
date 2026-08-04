@@ -19,7 +19,6 @@ export type UseTwoFactorAuthReturn = {
 export const OTP_MAX_LENGTH = 6;
 
 const fetchJson = async <T>(url: string): Promise<T> => {
-<<<<<<< HEAD
     const csrfToken = document.cookie
         .split('; ')
         .find((row) => row.startsWith('XSRF-TOKEN='))
@@ -33,10 +32,6 @@ const fetchJson = async <T>(url: string): Promise<T> => {
                 'X-XSRF-TOKEN': decodeURIComponent(csrfToken),
             }),
         },
-=======
-    const response = await fetch(url, {
-        headers: { Accept: 'application/json' },
->>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
     });
 
     if (!response.ok) {

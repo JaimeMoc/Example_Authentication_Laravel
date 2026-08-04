@@ -1,5 +1,4 @@
 import { Head, Link, usePage } from '@inertiajs/react';
-<<<<<<< HEAD
 import { Shield, Lock, Smartphone, Users, ChevronRight, Github } from 'lucide-react';
 import AppLogoIcon from '@/components/app-logo-icon';
 import { Button } from '@/components/ui/button';
@@ -34,15 +33,6 @@ const features = [
 ];
 
 export default function Welcome({ canRegister = true }: { canRegister?: boolean }) {
-=======
-import { dashboard, login, register } from '@/routes';
-
-export default function Welcome({
-    canRegister = true,
-}: {
-    canRegister?: boolean;
-}) {
->>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
     const { auth } = usePage().props;
 
     return (
@@ -50,7 +40,6 @@ export default function Welcome({
             <Head title="Welcome">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link
-<<<<<<< HEAD
                     href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700"
                     rel="stylesheet"
                 />
@@ -117,7 +106,7 @@ export default function Welcome({
                                     className="absolute left-0 top-full mt-1 w-full fill-[#1b1b18]/10 dark:fill-white/10"
                                     preserveAspectRatio="none"
                                 >
-                                    <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.58 14.287-.2.302-.2.484-.024.651.177.136 6.merge.438 16.84-3.948 51.37-21.032 60.43-22.034 67.557-17.185 7.093 4.82 7.208 15.51-.27 23.234-9.15 9.334-27.82 12.792-66.13 14.143-6.45.224-4.483 1.137 3.65 1.6 30.112 1.7 53.534-1.855 69.02-10.36z" />
+                                    <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.58 14.287-.2.302-.2.484-.024.651.177.136 6.438 16.84-3.948 51.37-21.032 60.43-22.034 67.557-17.185 7.093 4.82 7.208 15.51-.27 23.234-9.15 9.334-27.82 12.792-66.13 14.143-6.45.224-4.483 1.137 3.65 1.6 30.112 1.7 53.534-1.855 69.02-10.36z" />
                                 </svg>
                             </span>
                         </h1>
@@ -226,42 +215,6 @@ export default function Welcome({
                     </div>
                 </footer>
 
-=======
-                    href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600"
-                    rel="stylesheet"
-                />
-            </Head>
-            <div className="flex min-h-screen flex-col items-center bg-[#FDFDFC] p-6 text-[#1b1b18] lg:justify-center lg:p-8 dark:bg-[#0a0a0a]">
-                <header className="mb-6 w-full max-w-83.75 text-sm not-has-[nav]:hidden lg:max-w-4xl">
-                    <nav className="flex items-center justify-end gap-4">
-                        {auth.user ? (
-                            <Link
-                                href={dashboard()}
-                                className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                            >
-                                Dashboard
-                            </Link>
-                        ) : (
-                            <>
-                                <Link
-                                    href={login()}
-                                    className="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#19140035] dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]"
-                                >
-                                    Log in
-                                </Link>
-                                {canRegister && (
-                                    <Link
-                                        href={register()}
-                                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                                    >
-                                        Register
-                                    </Link>
-                                )}
-                            </>
-                        )}
-                    </nav>
-                </header>
->>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
             </div>
         </>
     );

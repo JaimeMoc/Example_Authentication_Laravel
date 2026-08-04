@@ -166,11 +166,7 @@ function TwoFactorVerificationStep({
                 errors,
             }: {
                 processing: boolean;
-<<<<<<< HEAD
                 errors?: Record<string, string>;
-=======
-                errors?: { confirmTwoFactorAuthentication?: { code?: string } };
->>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
             }) => (
                 <>
                     <div
@@ -199,13 +195,7 @@ function TwoFactorVerificationStep({
                                 </InputOTPGroup>
                             </InputOTP>
                             <InputError
-<<<<<<< HEAD
                                 message={errors?.code}
-=======
-                                message={
-                                    errors?.confirmTwoFactorAuthentication?.code
-                                }
->>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
                             />
                         </div>
 
