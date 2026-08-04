@@ -25,9 +25,12 @@ class User extends Authenticatable
         'email',
         'password',
         'microsoft_id',
+<<<<<<< HEAD
         'two_factor_secret',
         'two_factor_recovery_codes',
         'two_factor_confirmed_at',
+=======
+>>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
     ];
 
     /**

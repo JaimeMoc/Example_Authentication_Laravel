@@ -9,6 +9,7 @@
     ],
     "license": "MIT",
     "require": {
+<<<<<<< HEAD
         "php": "^8.3",
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/fortify": "^1.30",
@@ -16,6 +17,15 @@
         "laravel/sanctum": "^4.3",
         "laravel/socialite": "^5.25",
         "laravel/tinker": "^3.0",
+=======
+        "php": "^8.2",
+        "inertiajs/inertia-laravel": "^2.0",
+        "laravel/fortify": "^1.30",
+        "laravel/framework": "^12.0",
+        "laravel/sanctum": "^4.3",
+        "laravel/socialite": "^5.25",
+        "laravel/tinker": "^2.10.1",
+>>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
         "laravel/wayfinder": "^0.1.9",
         "socialiteproviders/manager": "^4.8",
         "socialiteproviders/microsoft": "^4.8",
@@ -29,7 +39,11 @@
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
+<<<<<<< HEAD
         "phpunit/phpunit": "^12.0"
+=======
+        "phpunit/phpunit": "^11.5.50"
+>>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
     },
     "autoload": {
         "psr-4": {
@@ -114,4 +128,8 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3d1289183cf43eae8b580a091ea6a224c944e970
