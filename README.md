@@ -2,6 +2,11 @@
 
 A production-ready authentication starter built with **Laravel 13**, **React 19**, and **Inertia.js**. Covers the full authentication surface: standard login, Microsoft SSO, two-factor authentication, role-based access control, and a complete user settings panel.
 
+![Login1](/Login1.png)
+![Login2](/Login2.png)
+![Inicio](/Inicio.png)
+![Registro](/Registro.png)
+
 ---
 
 ## Stack
