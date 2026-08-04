@@ -147,7 +147,7 @@ grp_system/
 
 ---
 
-## 🐳 Docker Image
+## Docker Image
 
 La imagen oficial está disponible en **Docker Hub**:  
 `mocjaim27/grp_system-app:latest`
